@@ -1,0 +1,63 @@
+/* Criteria Styles */
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      animation-name: changeColor;
+      animation-duration: 6s; 
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 525px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f6f9fb;
+      height: initial;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer 
+    {
+      background-color: #337ab7;
+      color: white;
+      padding: 15px;
+      animation-name: changeColor;
+      animation-duration: 6s;  
+    }
+
+    @keyframes changeColor {
+      from {background-color: #bb2828;}
+      to {background-color: #337ab7;}
+    }
+
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+        
+      #map {
+        width: 100%;
+        height: 655px;    
+      }
+
+      #radio {
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        line-height: 30px;
+        padding-left: 10px;
+      }
+
+
